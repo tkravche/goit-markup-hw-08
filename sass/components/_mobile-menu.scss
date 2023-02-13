@@ -89,15 +89,19 @@
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+
 }
 
+        .mobile-menu__link--current {
+      color: var(--accent-color);
+    }
 .mobile-menu__item {
   margin-bottom: 32px;
   &:first-of-type {
     margin-bottom: 35.7px;
   }
-}
 
+}
 
 .mobile-menu__contacts__link {
   font-weight: 500;
