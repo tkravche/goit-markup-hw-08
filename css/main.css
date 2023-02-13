@@ -569,11 +569,15 @@ body {
 
 @media screen and (min-width: 768px) {
   .contacts__link {
+    font-weight: 500;
     font-size: 12px;
     line-height: 1.1666666667;
     padding-top: 0px;
     padding-bottom: 0px;
     color: var(--primary-text-color);
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -581,14 +585,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 14px;
-    font-weight: 500;
-    line-height: 1.15;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -617,7 +617,19 @@ body {
 @media screen and (min-width: 1200px) {
   .contacts_icon--envelope,
   .contacts_icon--smartphone {
+    display: inline-block;
+    width: 16px;
+    height: 12px;
     margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts_icon--smartphone {
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    vertical-align: middle;
   }
 }
 
