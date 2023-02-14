@@ -1,5 +1,5 @@
 .hero {
-  max-width: 1600px;
+    max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 
@@ -84,12 +84,20 @@
     text-transform: uppercase;
 
     color: var(--background-color);
+      @media screen and (min-width: 768px) {
+         
+          padding-left: 189px;
+          padding-right: 189px;
+        }
     @media screen and (min-width: 1200px) {
       font-size: 44px;
       line-height: 1.4;
+      padding-left: 252px;
+      padding-right: 252px;
     }
   }
 }
+
 .hero__btn {
   font-weight: 700;
   font-size: 16px;

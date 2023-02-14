@@ -562,6 +562,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 0px;
   }
 }
 
@@ -855,10 +856,18 @@ body {
   text-transform: uppercase;
   color: var(--background-color);
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    padding-left: 189px;
+    padding-right: 189px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.4;
+    padding-left: 252px;
+    padding-right: 252px;
   }
 }
 
@@ -917,6 +926,13 @@ body {
   transition: opacity 150ms ease-in 400ms, transform 400ms ease;
   transition: opacity 150ms ease-in 400ms, transform 400ms ease, -webkit-transform 400ms ease;
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    height: 581px;
+    max-width: none;
+    width: 528px;
+  }
+}
 .modal-title {
   display: block;
   margin-bottom: 12px;
@@ -924,12 +940,6 @@ body {
   line-height: 1.15;
   text-align: center;
   color: var(--secondary-text-color);
-}
-@media screen and (min-width: 1200px) {
-  .modal {
-    min-height: 581px;
-    width: 528px;
-  }
 }
 
 .backdrop.is-hidden .modal {
