@@ -422,6 +422,11 @@ body {
     padding: 21px 15px;
   }
 }
+@media screen and (min-width: 768px) {
+  .header__wrapper {
+    padding: 0px 15px;
+  }
+}
 
 .header__line {
   border-bottom: 1px solid #ececec;
@@ -766,8 +771,8 @@ body {
   text-align: center;
   background-color: var(--hero-bg);
   /* hero overlay */
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/hero_phone@1x.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero_phone@1x.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_phone@1.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_phone@1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1321,7 +1326,6 @@ body {
 }
 
 .team__item {
-  width: 450px;
   border-radius: 4px 0px;
   background: var(--background-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
