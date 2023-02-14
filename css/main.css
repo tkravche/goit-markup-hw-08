@@ -637,7 +637,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 83px 48px 40px;
+  padding: 40px;
   background-color: var(--background-color);
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -709,6 +709,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
+@media screen and (max-width: 479px) {
+  .mobile-menu__link {
+    font-size: 28px;
+  }
+}
 
 .mobile-menu__link--current {
   color: var(--accent-color);
@@ -728,6 +733,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+@media screen and (max-width: 479px) {
+  .mobile-menu__contacts__link {
+    font-size: 22px;
+  }
+}
 
 .mobile-menu__contacts__link--accent {
   color: var(--accent-color);
@@ -745,6 +755,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .mobile-menu__socials {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 
 .mobile-menu__socials__link {
@@ -777,11 +794,6 @@ body {
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding: 200px 0;
-  }
-}
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero_phone@2x.jpg");
@@ -810,6 +822,11 @@ body {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero_desktop@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero_desktop@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
   }
 }
 .hero__title {
@@ -868,7 +885,8 @@ body {
 .modal {
   position: absolute;
   min-height: 609px;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -1236,7 +1254,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   background-color: var(--filterbutton-color);
   margin-bottom: 30px;

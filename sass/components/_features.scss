@@ -56,7 +56,7 @@ display: block;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     background-color: var(--filterbutton-color);
     margin-bottom: 30px;
