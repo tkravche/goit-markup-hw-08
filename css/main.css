@@ -477,19 +477,12 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .site-nav {
-    display: none;
-  }
+.site-nav {
+  display: none;
 }
 
 .contacts {
   display: none;
-}
-@media screen and (min-width: 1200px) {
-  .contacts {
-    margin-left: auto;
-  }
 }
 
 /* Navigation */
@@ -1340,14 +1333,9 @@ body {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1119.98px) {
   .team__item {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__item {
-    width: 270px;
+    width: calc((100% - 30px) / 2);
   }
 }
 
