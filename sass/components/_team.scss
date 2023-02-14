@@ -10,11 +10,8 @@ gap: 30px;
       }
     @media screen and (min-width: 1200px) {
                 flex-wrap: nowrap;
-       
-   
-    }
+            }
 }
-
 .team__item {
   width: 450px;
   border-radius: 4px 0px;
@@ -26,11 +23,10 @@ gap: 30px;
   &:not(:last-child) {
     margin-bottom: 30px;
   }}     
-         @media screen and (min-width: 768px)and (max-width: 1119.98px) {
+         @media screen and (min-width: 768px) {
           width: calc((100% - 30px ) / 2);
          }
 }
-
 .team__card {
 
   padding-top: 24px;
@@ -40,8 +36,7 @@ gap: 30px;
     padding-bottom: 30px;
   }
 }
-    
-.team__mintitle {
+    .team__mintitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
