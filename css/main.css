@@ -731,8 +731,8 @@ body {
   color: var(--primary-text-color);
 }
 
-.mobile-menu__contacts__link {
-  color: currentColor;
+.mobile-menu__contacts__link--accent {
+  color: var(--accent-color);
 }
 
 .mobile-menu__contacts {

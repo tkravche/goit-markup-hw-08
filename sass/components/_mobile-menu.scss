@@ -109,13 +109,12 @@
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
 
-//   color: var(--accent-color);
 color: var(--primary-text-color);
 }
-.mobile-menu__contacts__link {
-    color: currentColor;
-}
+.mobile-menu__contacts__link--accent{
+  color: var(--accent-color);
 
+}
 .mobile-menu__contacts {
             margin-bottom: 64px;
     }
